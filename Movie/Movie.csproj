@@ -5,9 +5,22 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Include="wwwroot\AdminLTE-3.1.0\.github\codeql\codeql-config.yml" />
+    <None Include="wwwroot\AdminLTE-3.1.0\.github\CONTRIBUTING.md" />
+    <None Include="wwwroot\AdminLTE-3.1.0\.github\dependabot.yml" />
+    <None Include="wwwroot\AdminLTE-3.1.0\.github\ISSUE_TEMPLATE\bug-report-for-adminlte-v3.1-x.md" />
+    <None Include="wwwroot\AdminLTE-3.1.0\.github\ISSUE_TEMPLATE\feature-request-for-adminlte-v4-x.md" />
+    <None Include="wwwroot\AdminLTE-3.1.0\.github\workflows\ci.yml" />
+    <None Include="wwwroot\AdminLTE-3.1.0\.github\workflows\codeql.yml" />
+    <None Include="wwwroot\AdminLTE-3.1.0\.github\workflows\docs.yml" />
+    <None Include="wwwroot\AdminLTE-3.1.0\.github\workflows\lint.yml" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Autofac" Version="6.2.0" />
     <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="7.1.0" />
     <PackageReference Include="Dapper" Version="2.0.90" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.5" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.1.5" />
     <PackageReference Include="System.Data.SqlClient" Version="4.8.2" />
   </ItemGroup>
