@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\cf303520\\source\\repos\\Movie\\Movie\\Movie.csproj": {}
+    "D:\\project\\Movie2\\Movie\\Movie.csproj": {}
   },
   "projects": {
-    "C:\\Users\\cf303520\\source\\repos\\Movie\\Movie\\Movie.csproj": {
+    "D:\\project\\Movie2\\Movie\\Movie.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\cf303520\\source\\repos\\Movie\\Movie\\Movie.csproj",
+        "projectUniqueName": "D:\\project\\Movie2\\Movie\\Movie.csproj",
         "projectName": "Movie",
-        "projectPath": "C:\\Users\\cf303520\\source\\repos\\Movie\\Movie\\Movie.csproj",
+        "projectPath": "D:\\project\\Movie2\\Movie\\Movie.csproj",
         "packagesPath": "C:\\Users\\cf303520\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\cf303520\\source\\repos\\Movie\\Movie\\obj\\",
+        "outputPath": "D:\\project\\Movie2\\Movie\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\cf303520\\AppData\\Roaming\\NuGet\\NuGet.Config",

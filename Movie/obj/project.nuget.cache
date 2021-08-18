@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "PYd7sFYu4SANJ/e+FjwQYI6wnWHHM9KsVLO5FGxPiRSmf3wxQ+7fdk1S1hz2onhKBmM1vk4MNm4saAwIDbIIlw==",
+  "dgSpecHash": "veLO8QHtEFPAgTUubIdbUjrkV7jfg/MFY3nYIW6eEu7W+w5g6N+5Ho5MddrWHrI8J1XFK/WYvPgmpB8ZbyT+FQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\cf303520\\source\\repos\\Movie\\Movie\\Movie.csproj",
+  "projectFilePath": "D:\\project\\Movie2\\Movie\\Movie.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\cf303520\\.nuget\\packages\\autofac\\6.2.0\\autofac.6.2.0.nupkg.sha512",
     "C:\\Users\\cf303520\\.nuget\\packages\\autofac.extensions.dependencyinjection\\7.1.0\\autofac.extensions.dependencyinjection.7.1.0.nupkg.sha512",
