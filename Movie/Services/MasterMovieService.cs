@@ -55,6 +55,9 @@ namespace Movie.Services
             var masterMovie = masterMovieRepositories.GetById(model.Id);
             masterMovie.Title = model.Title;
             masterMovie.ImgLink = model.ImgLink;
+            masterMovie.Time = model.Time;
+            masterMovie.Date = model.Date;
+            masterMovie.Type = model.Type;
             return masterMovieRepositories.Update(masterMovie)>0;
         }
     }

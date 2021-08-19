@@ -27,8 +27,19 @@ namespace Movie
         public IConfiguration Configuration { get; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
+
+
         public IServiceProvider ConfigureServices(IServiceCollection services)
         {
+            services.AddCors(options =>
+            {
+                options.AddPolicy("AllowSpencificOrigins", builder =>
+                 {
+                     builder.WithOrigins("http://localhost:3000")
+                     .AllowAnyHeader()
+                     .AllowAnyMethod();
+                 });
+            });
 
             services.AddControllersWithViews();
 
@@ -78,7 +89,7 @@ namespace Movie
             }
             app.UseHttpsRedirection();
             app.UseStaticFiles();
-
+            app.UseCors("AllowSpencificOrigins");
             app.UseRouting();
 
             app.UseSwagger();

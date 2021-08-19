@@ -29,11 +29,17 @@ namespace Movie.Repositories
         public override int Add(MasterMovie tModel)//@ถ้าไม่มีจะerror
         {
             var commandStr = string.Format(@" INSERT INTO[dbo].[MasterMovie] 
-                                     ([Title]
-                                    ,[ImgLink])
-                                       VALUES
+                                    ([Title]
+                                   ,[ImgLink]
+                                   ,[Time]
+                                   ,[Date]
+                                   ,[Type])
+                                     VALUES
                                      (@ParaTitle
-                                    ,@ParaImgLink)");
+                                    ,@ParaImgLink
+                                    , @ParaTime
+                                    ,@ParaDate      
+                                    ,@ParaType  )");
             return _db.Execute(commandStr, MappingParameter (tModel)); 
                 
  
@@ -57,7 +63,10 @@ namespace Movie.Repositories
         {
             var commandStr = string.Format(@" UPDATE[dbo].[MasterMovie]
                                           SET  [Title]  = @ParaTitle,
-                                              [ImgLink] = @ParaImgLink
+                                              [ImgLink] = @ParaImgLink,
+                                               [Time]= @ParaTime,
+                                               [Date]= @ParaDate,
+                                               [Type]= @ParaType
                                               WHERE [id]= @ParaId");
             return _db.Execute(commandStr, MappingParameter(tModel));
         }
@@ -67,7 +76,10 @@ namespace Movie.Repositories
             {
                 ParaId = tModel.Id,
                 ParaTitle = tModel.Title,
-                ParaImgLink = tModel.ImgLink
+                ParaImgLink = tModel.ImgLink,
+                ParaTime=tModel.Time,
+                ParaDate=tModel.Date,
+                ParaType=tModel.Type
             };
             }
         }
